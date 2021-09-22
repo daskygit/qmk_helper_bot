@@ -7,7 +7,7 @@ require('dotenv').config();
 const token = process.env.TOKEN;
 
 // Import utils.js
-const {prefix, baseurl, msg, docsSwitch, authroles, parse, bare, firmware, toolbox, plainhelp, disclaimer, ohshitgit, git, xkcd, promicro, protonc, elitec, blackpill, bluepill, msys, coc, kbdfans, lighting, vid, vidq, automark, markdown, checkrole, sonixinvite, sonix, openrgbinvite, openrgb, vialinvite, vial, iconfrominvite, inputlanguage} = require('./utils.js');
+const {prefix, baseurl, msg, docsSwitch, authroles, parse, bare, firmware, toolbox, plainhelp, disclaimer, ohshitgit, git, xkcd, promicro, protonc, elitec, blackpill, bluepill, msys, coc, kbdfans, lighting, vid, vidq, automark, markdown, checkrole, sonixinvite, sonix, openrgbinvite, openrgb, vialinvite, vial, iconfrominvite, inputlanguage, standards, snip} = require('./utils.js');
 let cooldown = require("./utils.js").cooldown;
 
 bot.on('ready', () => {
@@ -276,6 +276,18 @@ bot.on('message', message => {
       case 'inputlanguage':  // explain discord markdown
         //channel.send(inputlanguage);
         cmdmsg.addFields({name: 'Input Language\n', value: inputlanguage});
+        channel.send(cmdmsg);
+        break;
+
+      case 'standards':  // send xkcd standards
+        //channel.send(standards);
+        cmdmsg.setImage(standards);
+        channel.send(cmdmsg);
+        break;
+      
+      case 'snip':  // send xkcd standards
+        //channel.send(snip);
+        cmdmsg.setImage(snip);
         channel.send(cmdmsg);
         break;
     }  // switch (cmd)

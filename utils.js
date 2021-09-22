@@ -179,7 +179,8 @@ module.exports = {
   lighting: '**Backlight:** Single color, per key, not individually addressable (all on or off)\n**RGBLight:** Underglow RGB, linear design (single chain), individually addressable\n**LED Matrix:** Single color, per key, individually addressable\n**RGB Matrix:** RGB, per key, individually addressable\n**Indicators:** Scroll/Caps/Num Lock LEDs',
   markdown: 'Inserting triple backticks at the beginning and end of your code will create a code block. You can specify a language after the first triple back tick, applicable options would be c, make, python and markdown.\n \n\\\`\\\`\\\`c\n\`\`\`c\nif (is_fancy_example) {\n   return false;\n}\n\`\`\`\n\\\`\\\`\\\`',
   inputlanguage: 'Keyboards don\'t send characters, it uses keycodes. The input language set by the OS maps those keycodes to characters. If you have swapped round the keys in your keyboard firmware try setting your OS input language to English, otherwise make sure you have the correct input language selected in your OS.\n\nThere\'s also keymap header files that map specific languages to keycodes. Follow this link for more informaiton <https://docs.qmk.fm/#/reference_keymap_extras?id=language-specific-keycodes>',
-  
+  standards: 'https://imgs.xkcd.com/comics/standards.png',
+  snip: 'https://i.imgur.com/Us2oNzW.png',
   cooldown: [],
   authroles: ['Directors', 'Collaborators', 'Mods'],
 
