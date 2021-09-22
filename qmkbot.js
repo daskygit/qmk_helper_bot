@@ -247,7 +247,7 @@ bot.on('message', message => {
         break;
 
       case 'mdlast':  // automatically markdown previous message
-        if (checkrole(member, authroles)) {
+        if (channel.type !== 'dm' && checkrole(member, authroles)) {
           message.channel.messages.fetch({limit: 2}).then(messages => {
             var language = 'c';
             if (args.length === 2) {
